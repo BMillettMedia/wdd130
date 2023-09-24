@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+
+:root {
+    --primary-color: #D64933;
+    --secondary-color: #FCC8B2;
+    --accent1-color: #94B9AF;
+    --accent2-0color: #003844; 
+
+    --heading-font: 'Bebas', serif;
+    --paragraph-font: 'Dosis', serif;
+
+    --nav-background-color: #633C36;
+    --nav-link-color: #74E8C9;
+    --nav-hover-link-color: #94B9AF;
+    --nav-hover-background-color: #326356;
+}
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding:20px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color:var(--primary-color);
+}
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+p{
+    padding: 25px;
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a{
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
+}
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+
+/**Future Content 
+#main-nav{
+    background-color: #000000;
+    color:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+a {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+    
+}
+a:hover {
+    background-color: aqua;
+    color:#000000;
+    padding: 15px;
+    width: fit-content;
+
+}
+li{
+    align-items: center;
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 60px;
+    width:fit-content;
+}**/
