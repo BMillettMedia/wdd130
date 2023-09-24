@@ -70,11 +70,11 @@ a:hover {
     padding: 15px;
     width: fit-content;
 
-}
+}**/
 li{
     align-items: center;
     display: inline-block;
     padding-left: 60px;
     padding-right: 60px;
     width:fit-content;
-}**/
+}
