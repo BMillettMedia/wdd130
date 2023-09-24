@@ -9,7 +9,7 @@
     --heading-font: 'Bebas', serif;
     --paragraph-font: 'Dosis', serif;
 
-    --nav-background-color: #633C36;
+    --nav-background-color: #D64933;
     --nav-link-color: #74E8C9;
     --nav-hover-link-color: #94B9AF;
     --nav-hover-background-color: #326356;
@@ -40,6 +40,7 @@ nav a{
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
+    height: auto;
 }
 nav a:link, nav a:visited{
     color: var(--nav-link-color);
@@ -70,11 +71,11 @@ a:hover {
     padding: 15px;
     width: fit-content;
 
-}
+}**/
 li{
     align-items: center;
     display: inline-block;
     padding-left: 60px;
     padding-right: 60px;
     width:fit-content;
-}**/
+}
