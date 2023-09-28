@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ h1{
     color: steelblue;
 }
 img{
-    width: 150px;
+    width: 200px;
     height: auto;
     border: 1px solid steelblue;
     box-shadow: 0 0 30px gray;
@@ -34,6 +34,7 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    width: 20em;
 }
 main img{
     width: 150px;
@@ -60,8 +61,12 @@ main img {
     /*future css code*/
     float: right;
 }
-aside h2{
-    position: absolute;
+.indent {
+    padding-left: 2em;
+    display: block;
+}
+.box h2{
+    /*position: absolute;*/
     top: 47px;
     left: 150px;
 }
