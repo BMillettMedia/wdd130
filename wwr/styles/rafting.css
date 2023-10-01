@@ -1,4 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+:root {
+    --primary-color: #D64933;
+    --secondary-color: #FCC8B2;
+    --accent1-color: #94B9AF;
+    --accent2-0color: #003844; 
+
+    --heading-font: 'Bebas', serif;
+    --paragraph-font: 'Dosis', serif;
+
+    --nav-background-color: #D64933;
+    --nav-link-color: #74E8C9;
+    --nav-hover-link-color: #94B9AF;
+    --nav-hover-background-color: #326356;
+}
+
+.hero img{
+    display: block;
+    width: 100;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+}
+
+article{
+    position: absolute;
+    background-color: #003844; /*confirm background color*/
+}
+
+article img {
+    float: right;
+
+}
+
+/*4*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
 
 :root {
     --primary-color: #D64933;
@@ -26,7 +62,6 @@ h1,h2,h3,h4,h5,h6 {
 header{
     padding: 20px;
     background-color: var(--accent1-color);
-    padding-bottom: 50px;
 }
 p{
     padding: 25px;
@@ -35,14 +70,6 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
-}
-nav li {
-    display: inline-block;
-    list-style-type: none;
-}
-footer li {
-    display: inline-block;
-    list-style-type: none;
 }
 nav a{
     background-color: var(--nav-background-color);
@@ -58,46 +85,33 @@ nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+
+
+/*Future Content 
+#main-nav{
+    background-color: #000000;
+    color:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+a {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+    
+}
+a:hover {
+    background-color: aqua;
+    color:#000000;
+    padding: 15px;
+    width: fit-content;
+
+}
 li{
     align-items: center;
-    /*display: inline-block;*/
+    display: inline-block;
     padding-left: 60px;
     padding-right: 60px;
     width:fit-content;
-}
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
-    position: absolute;
-}
-.adventure {
-    width: 50%;
-    margin: 25px;
-}
-
-h1 {
-    position: absolute;
-}
-article{
-    position: absolute;
-    /*background-color: #003844;*/ /*confirm background color*/
-}
-
-article img {
-    float: right;
-}
-.logo {
-    width: 25px;
-}
-.hero {
-    margin: 50px;
-    position: absolute;
-}
-.hero p {
-    float: left;
-
-}
-/**.background {
-    position: relative;
 }**/
