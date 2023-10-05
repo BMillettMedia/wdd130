@@ -5,15 +5,26 @@
 }
 main{
     max-width: 840px;
+    grid-column: 2/3;
+    align-items: center;
+    margin: 1rem;
 }
 nav {
     background-color: steelblue;
     padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
     color: #ffffff;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff; 
 }
 h1{
     color: steelblue;
@@ -29,14 +40,19 @@ p{
 }
 aside { 
     margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
+    /*border: 1px solid rgba(0, 0, 0, 0.2);*/ 
     padding: 1em;
-    background-color: #eee;
+    /*background-color: #eee;*/
     color: #333;
-    text-align: center;
+    align-content: center;
     width: 20em;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    Float: right;
+    right: 50px;
 }
-main img{
+aside img{
     width: 150px;
     height: auto;
 }
@@ -53,10 +69,7 @@ footer{
     background-color: #ddd;
     color:#000;
 }
-aside{
-    width: 20em;
-    text-align: center;
-}
+
 main img {
     /*future css code*/
     float: right;
@@ -64,9 +77,27 @@ main img {
 .indent {
     padding-left: 2em;
     display: block;
+    margin-right: 65px;
 }
-.box h2{
-    /*position: absolute;*/
+aside h2{
+    position: absolute;
     top: 47px;
     left: 150px;
 } 
+header, .grid, footer {
+    max-width: 840px;
+    margin:0 auto;
+}
+.grid {
+    display: grid;
+    align-items: center;
+}
+h2 {
+    color: #fff;
+    text-align: center;
+    right: 25px;
+}
+ul {
+    float: right;
+    width: 320px;
+}
