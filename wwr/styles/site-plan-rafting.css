@@ -98,6 +98,12 @@ article img {
     float: left;
 
 }
-/**.background {
-    position: relative;
-}**/
+/**Grid Info**/
+.grid {
+    display: grid;
+    align-items: center;
+}
+.PhotoAdventure{
+    text-decoration:none;
+    display: inline;
+}

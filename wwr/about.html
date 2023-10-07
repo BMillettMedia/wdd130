@@ -5,7 +5,7 @@
             <meta name="viewport" content="width=device-width,initial-scale=1.0">
             <meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding info, and a style guide for the course website project"><!--add meta data content here after reviewing description webpage -->
             <title>Bryan Millett | WDD 130</title>
-            <link rel="stylesheet" type="text/css" href="styles/site-plan-rafting.css">
+            <link rel="stylesheet" type="text/css" href="styles/rafting.css">
         </head>
         <body>
             <header>
@@ -13,7 +13,7 @@
                 <div>Bryan Millett</div>
             </header>
             <main>
-                <nav id="main-nav">
+                <nav>
                     <ul>
                         <li><a href="site-plan-rafting.html">Home</a></li>
                         <li><a href="#">About Us</a></li>
@@ -21,28 +21,31 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
-                <img class="background" src="images/rivernarrow.webp" alt="background image">
-                <div class="hero">
-                    <h1>Rafting Company Name</h1>
-                    <article>
+                <div class="hero flex">
+                    <img class="background" src="images/rivernarrow.webp" alt="background image">
+                    <article class="hero">
+                        <h1 class="overlay">Rafting Company Name</h1>
                         <img src="images/raftingpeople.jpg" alt="happy people>">
-                        <p>Lorem Ipsum</p>
+                        <p class="overlay_copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Scelerisque viverra mauris in aliquam sem. Sit amet venenatis urna cursus eget nunc. Libero nunc consequat interdum varius. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Id eu nisl nunc mi ipsum. Vulputate odio ut enim blandit volutpat maecenas volutpat. Imperdiet massa tincidunt nunc pulvinar sapien. Vestibulum lectus mauris ultrices eros in. Vitae ultricies leo integer malesuada nunc. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Id diam maecenas ultricies mi eget. Vestibulum sed arcu non odio euismod lacinia. Purus ut faucibus pulvinar elementum integer enim. Quam quisque id diam vel quam elementum pulvinar. Senectus et netus et malesuada fames ac turpis.</p>
                     </article>
                 </div>
-                <div id="history">
-                    <h3>History</h3>
-                    <p>CONTENT</p>
+                <h3>History</h3>
+                <div class="grid flex">
+                    <img src="images/splash.png" alt="logo" class="mainlogo">
+                    <p class="right_side_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Scelerisque viverra mauris in aliquam sem. Sit amet venenatis urna cursus eget nunc. Libero nunc consequat interdum varius. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Id eu nisl nunc mi ipsum. Vulputate odio ut enim blandit volutpat maecenas volutpat. Imperdiet massa tincidunt nunc pulvinar sapien. Vestibulum lectus mauris ultrices eros in. Vitae ultricies leo integer malesuada nunc. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Id diam maecenas ultricies mi eget. Vestibulum sed arcu non odio euismod lacinia. Purus ut faucibus pulvinar elementum integer enim. Quam quisque id diam vel quam elementum pulvinar. Senectus et netus et malesuada fames ac turpis.</p>
                 </div>
-                <div>
-                    <h3>Adventure Awaits you</h3>
-                    <img class="adventure" src="images/raftingadventure1.jpg" alt="1">
-                    <img class="adventure" src="images/raftingadventure2.jpg" alt="2">
-                    <img class="adventure" src="images/raftingadventure3.jpg" alt="3">
-                    <img class="adventure" src="images/raftingadventure4.jpg" alt="4">
-                    <img class="adventure" src="images/raftingadventure5.jpg" alt="5">
+                <h3>Adventure Awaits you</h3>
+                <div class="grid">
+                    <ul>
+                        <li class="PhotoAdventure"><img class="adventure" src="images/raftingadventure1.jpg" alt="1"></li>
+                        <li class="PhotoAdventure"><img class="adventure" src="images/raftingadventure2.jpg" alt="2"></li>
+                        <li class="PhotoAdventure"><img class="adventure" src="images/raftingadventure3.jpg" alt="3"></li>
+                        <li class="PhotoAdventure"><img class="adventure" src="images/raftingadventure4.jpg" alt="4"></li>
+                        <li class="PhotoAdventure"><img class="adventure" src="images/raftingadventure5.jpg" alt="5"></li>
+                    </ul>
                 </div>
              </main>
-            <footer>
+            <footer class="grid">
                 <ul>
                     <li><a href="https://www.facebook.com"><img class="logo" src="images/facebooklogo.png" alt="Facebook logo"></a></li>
                     <li><a href="https://www.twitter.com"><img class="logo" src="images/xlogoblack.png" alt="X logo"></a></li>
