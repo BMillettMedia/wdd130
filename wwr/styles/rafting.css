@@ -1,7 +1,10 @@
 * :not(.hero){
     justify-content: center;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+#headerContent{
+    grid-column: 2/2;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');*/
 :root {
     --primary-color: #D64933;
     --secondary-color: #FCC8B2;
@@ -37,6 +40,10 @@ img :not(.advenure){
 .mainlogo{
     width: 350px;
     grid-column: 1/2;
+    margin-right: 1rem;
+}
+.minilogo{
+    width: 200px;
     margin-right: 1rem;
 }
 body{
@@ -111,6 +118,10 @@ li{
 .grid {
     display: grid;
     align-items: center;
+}
+.headGrid {
+    display: grid;
+    justify-content: left;
 }
 /**.PhotoAdventure{
 }**/
