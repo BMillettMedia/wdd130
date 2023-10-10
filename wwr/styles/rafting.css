@@ -30,7 +30,6 @@
 img :not(.advenure){
     width:50%;
     display: inline-block;
-    /**float: left;**/
 }
 .logo{
     width: 50px;
@@ -60,7 +59,6 @@ header{
 p :not(.hero){
     padding: 25px;
     right: -50rem;
-    /*color: white;*/
     font-size: 20px;
 }
 .overlay_copy {
@@ -115,10 +113,6 @@ li{
     align-items: center;
 }
 /**.PhotoAdventure{
-    text-decoration: none;
-    display: inline-block;
-    list-style-type: none;
-    height: 50px;
 }**/
 main{
     grid-column: 2/3;
@@ -137,7 +131,6 @@ div {
     right: -50rem;
 }
 .adventure{
-    /*justify-content: space-between space-evenly;*/
     display: inline-block;
     width: 8rem;
 }
