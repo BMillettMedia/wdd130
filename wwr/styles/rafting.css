@@ -106,7 +106,7 @@ nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-li{
+li :not(.contactInfo){
     align-items: center;
     display: inline-block;
     padding-left: 20px;
@@ -150,4 +150,62 @@ div {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+}
+.teamPhoto{
+    width: 400px;
+}
+.contactInfo{
+    align-items: center;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+    width:1000px;
+    font-size: 25px;
+    list-style-type: none;
+    padding: 25px;
+}
+/*.contactItem{
+    padding:10px;
+}*/
+form{
+    background-color: gray;
+    color: black;
+    padding: 50px
+}
+fieldset{
+    padding: 50px;
+    background-color: gray;
+    margin: 15px;
+}
+button{
+    background-color: navy;
+    color: white;
+    padding: 25px;
+    font-size: 35px;
+    /*left: 15px;*/
+}
+button:hover {
+    background-color: green;
+    color: black;
+    padding: 25px;
+}
+legend{
+    color: white;
+    background-color: gray;
+    font-size: 35px;;
+}
+select{
+    font-size: 25px;
+}
+input{
+    height: 25px;
+    width: auto;
+}
+.teamMember{
+    padding: 25px;
+}
+.contactItem{
+    /*padding: 25px;*/
+    display: inline-block;
+    font-size: 15px;
+    padding-right: 25px;
 }
