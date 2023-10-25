@@ -6,7 +6,7 @@
 }
 /*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');*/
 :root {
-    --primary-color: #D64933;
+    --primary-color: #000000;
     --secondary-color: #FCC8B2;
     --accent1-color: #94B9AF;
     --accent2-0color: #003844; 
@@ -14,10 +14,42 @@
     --heading-font: 'Bebas', serif;
     --paragraph-font: 'Dosis', serif;
 
-    --nav-background-color: #D64933;
-    --nav-link-color: #74E8C9;
+    --nav-background-color: #84281A;
+    --nav-link-color: #ffffff;
     --nav-hover-link-color: #94B9AF;
     --nav-hover-background-color: #326356;
+}
+html, body {
+	background: #B7B7A4;
+}
+.full_content :not(headGrid headerContent main-nav) /*overlay_copy grid flex)*/{
+	left: 50px;
+}
+html {
+	margin: 0;
+	padding: 0;
+	max-width:1920px;
+	min-width: 480px;
+	width: 200%;
+	height: 100vh;
+	margin-left: -25px;
+	overflow-x: hidden;
+
+}
+body {
+	font-family: var(--paragraph-font);
+}
+.tagLine {
+	margin-left: -50px;
+}l {
+	list-style-type: none;
+}
+p{
+	font-size: 20px;
+}
+br{ 
+margin: 0;
+padding: 0;	
 }
 .hero :not(.background){
     position: absolute;
@@ -46,15 +78,20 @@ img :not(.advenure){
     width: 200px;
     margin-right: 1rem;
 }
-body{
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding:20px;
-}
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--heading-font);
     color:var(--primary-color);
     font-size: 50px;
+}
+.Main_title{
+	font-family: var(--heading-font);
+    color:var(--primary-color);
+    font-size: 65px;
+}
+.Nav_title {
+	font-family: var(--heading-font);
+    color:var(--primary-color);
+    font-size: 75px;
 }
 header{
     padding: 20px;
@@ -71,17 +108,22 @@ p :not(.hero){
 .overlay_copy {
     grid-column: 1/2;
     width: 40rem;
-    left: 20rem;
+    /*left: 15rem;*/
     color: white;
 }
 .overlay{
     left: 5rem;
+	color: white;
 }
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
-    width: inherit;
+	margin-top: -20px;
+	max-width:1920px;
+	min-width: 480px;
+	width: 200%;
+	overflow-x: hidden;
 }
 nav li {
     display: inline-block;
@@ -106,25 +148,42 @@ nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-li :not(.contactInfo){
+li :not(.contactInfo) :not(.nav_link){
     align-items: center;
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
-    width:auto;
+    width:75px; /*Issue with V_alignment & nav list links if turned on*/
     font-size: 35px;
+	list-style-type: none;
+}
+.nav_link :not(.contactInfo){
+    align-items: center;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*width:50px;*/ /*Issue with V_alignment & nav list links if turned on*/
+    font-size: 35px;
+	list-style-type: none;
 }
 /**Grid Info**/
 .grid {
-    display: grid;
+    display: inline-grid;
     align-items: center;
+	justify-content: center;
+	grid-template-columns: 400px 400px 400px 400px 400px;
+	column-gap: 50px;
+	row-gap: 50px;
+	/*width:100%;*/
 }
 .headGrid {
     display: grid;
     justify-content: left;
+	max-width:1920px;
+	min-width: 480px;
+	width: 200%;
+	margin-top:-20px;
 }
-/**.PhotoAdventure{
-}**/
 main{
     grid-column: 2/3;
     margin: 1rem;
@@ -143,7 +202,8 @@ div {
 }
 .adventure{
     display: inline-block;
-    width: 8rem;
+    width: 400px;
+	align-items: center;
 }
 .flex {
     display: flex;
@@ -169,7 +229,8 @@ div {
 form{
     background-color: gray;
     color: black;
-    padding: 50px
+    padding: 50px;
+	margin-left: 50px;
 }
 fieldset{
     padding: 50px;
@@ -209,3 +270,16 @@ input{
     font-size: 15px;
     padding-right: 25px;
 }
+.tagLine{
+	font-size: 20px;
+}
+
+.team{
+	margin-left: 50px
+}
+.contactItem{
+	font-size: 35px;
+}
+/*iframe {
+	float: left;
+}*/
