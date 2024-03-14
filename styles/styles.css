@@ -8,16 +8,23 @@ main {
 }
 main img {
     float: right;
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    margin: 0 0 1rem 1rem;
 }
 aside {
     width: 20rem;
-    
     text-align: center;
+    position: relative;
 }
 aside h2{
     position: absolute;
     top: 47px;
-    left: 150px;
+    left: 120px;
+    color: #fff;
 }
 aside img{
     width: 200px;
