@@ -6,6 +6,9 @@
 main {
     max-width: 840px;
 }
+main img {
+    float: right;
+}
 aside {
     width: 20rem;
     
