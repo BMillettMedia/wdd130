@@ -33,9 +33,11 @@ h1,h2,h3,h4,h5,h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-header{
+header {
     padding: 20px;
     background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes auto width, nav takes the remaining space */
 }
 p {
     padding: 25px;
@@ -44,6 +46,11 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    grid-column: 2/5;
+    justify-content: flex-end; 
+}
+nav li{
+    padding-right: 50px;
 }
 nav a{
     display: block;
@@ -69,6 +76,15 @@ img{
     float: right;
     /**position: absolute;**/
 }
+li{
+    align-items: center;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:75px; /*Issue with V_alignment & nav list links if turned on*/
+    font-size: 35px;
+	list-style-type: none;
+}
 /**Classes**/
 .hero img{
     display: block;
@@ -87,4 +103,31 @@ img{
 /*.subhero{
     right: 500px;
 }*/
+.grid {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #706c61;
+    grid-template-columns: 400px 400px 400px 400px 400px;
+	column-gap: 50px;
+	row-gap: 50px;
+}
+.social{
+    
+}
+/**.headergrid {
+    display: grid;
+    align-items: center;
+}**/
+/**.minilogo{
+    grid-column: 1/2;
+}**/
+/**.headGrid {
+    display: grid;
+    justify-content: left;
+	max-width:1920px;
+	min-width: 480px;
+	width: 200%;
+	margin-top:-20px;
+}**/
 /**IDs**/
