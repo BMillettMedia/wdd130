@@ -85,6 +85,15 @@ img{
     font-size: 35px;
 	list-style-type: none;
 }*/
+main img {
+    float: right;
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    margin: 0 1rem 1rem 1rem; /* Adjusted margin */
+}
 /**Classes**/
 .hero img{
     display: block;
