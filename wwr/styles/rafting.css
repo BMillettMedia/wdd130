@@ -10,8 +10,10 @@
     --accent2-color:#706c61;
 
     --nav-background-color:#706c61;
-    --nav-link-color:#2e0014;
-    --nav-hover-link-color:#706c61;
+    --nav-link-color:#fff;
+    /**--nav-link-color:#2e0014;**/
+    --nav-hover-link-color:#fff;
+    /**--nav-hover-link-color:#706c61;**/
     --nav-hover-background-color:#2e0014;
 
     --heading-font: 'Lato', serif;
@@ -41,6 +43,7 @@ header {
 }
 p {
     padding: 25px;
+    color:#fff;
 }
 nav {
     background-color: var(--nav-background-color);
@@ -67,7 +70,8 @@ nav a:hover {
 }
 article {
     position: absolute;
-    background-color: aqua;
+    background-color: var(--accent1-color);
+    color: #fff;
 }
 article :not(img, p){
     opacity: 50%;
