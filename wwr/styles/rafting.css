@@ -3,48 +3,65 @@
 
 /* Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
-:root{
-    --primary-color:#ed6a5a;
-    --secondary-color:#ffd166;
-    --accent1-color:#2e0014;
-    --accent2-color:#706c61;
 
-    --nav-background-color:#706c61;
-    --nav-link-color:#fff;
-    /**--nav-link-color:#2e0014;**/
-    --nav-hover-link-color:#fff;
-    /**--nav-hover-link-color:#706c61;**/
-    --nav-hover-background-color:#2e0014;
+:root {
+    --primary-color: #ed6a5a;
+    --secondary-color: #ffd166;
+    --accent1-color: #2e0014;
+    --accent2-color: #706c61;
+
+    --nav-background-color: #706c61;
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #fff;
+    --nav-hover-background-color: #2e0014;
 
     --heading-font: 'Lato', serif;
     --paragraph-font: 'Open Sans', serif;
 }
-/*Main Code*/
+
+/* Main Code */
+label {
+    background-color: white;
+}
+
+* {
+    background-color: var(--accent2-color);
+}
+
 ul {
     list-style-type: none;
 }
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
 }
-h1{
-    position: absolute;
-}
-h1,h2,h3,h4,h5,h6 {
+
+h1, h2, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    font-size: 50px;
 }
+
+h3 { 
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 35px; 
+}
+
 header {
     padding: 20px;
     background-color: var(--accent1-color);
     display: grid;
     grid-template-columns: auto 1fr; /* Logo takes auto width, nav takes the remaining space */
 }
+
 p {
     padding: 25px;
-    color:#fff;
+    color: #fff;
 }
+
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
@@ -52,43 +69,41 @@ nav {
     grid-column: 2/5;
     justify-content: flex-end; 
 }
-nav li{
+
+nav li {
     padding-right: 50px;
 }
-nav a{
+
+nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
 }
-nav a:link, nav a:visited{
+
+nav a:link, nav a:visited {
     color: var(--nav-link-color);
 }
+
 nav a:hover {
-    color:var(--nav-hover-link-color);
+    color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+
 article {
     position: absolute;
     background-color: var(--accent1-color);
     color: #fff;
 }
-article :not(img, p){
+
+article :not(img, p) {
     opacity: 50%;
 }
-img{
+
+img {
     float: right;
-    /**position: absolute;**/
 }
-/*li{
-    align-items: center;
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    width:75px; 
-    font-size: 35px;
-	list-style-type: none;
-}*/
+
 main img {
     float: right;
     width: 150px;
@@ -98,49 +113,159 @@ main img {
     box-shadow: 0 0 30px gray;
     margin: 0 1rem 1rem 1rem; /* Adjusted margin */
 }
-/**Classes**/
-.hero img{
+
+form {
+    color: white;
+}
+
+/* Classes */
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
-.logo{
+
+.logo {
     width: 50px;
 }
-.adventure{
-    /**display: inline-block;**/
-    /**width: 400px;**/
+
+.adventure {
     width: 190px;
-	/**align-items: center;**/
 }
-/*.subhero{
-    right: 500px;
-}*/
+
 .grid {
     display: inline-grid;
     align-items: center;
     justify-content: center;
     background-color: #706c61;
     grid-template-columns: 400px 400px 400px 400px 400px;
-	column-gap: 50px;
-	row-gap: 50px;
+    column-gap: 50px;
+    row-gap: 50px;
 }
-.social{
-    
+
+.teamMember {
+    padding: 25px;
 }
-/**.headergrid {
-    display: grid;
+
+.social {}
+
+.contactItem {
+    display: inline-block;
+    font-size: 15px;
+    padding-right: 25px;
+    font-size: 35px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Main_title {
+    justify-content: flex-start;   
+    order: 1;
+}
+
+p {
+    order: 2;
+}
+
+.contactInfo {
+    order: 3;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.teamMember {
+    display: flex;
     align-items: center;
-}**/
-/**.minilogo{
-    grid-column: 1/2;
-}**/
-/**.headGrid {
-    display: grid;
-    justify-content: left;
-	max-width:1920px;
-	min-width: 480px;
-	width: 200%;
-	margin-top:-20px;
-}**/
-/**IDs**/
+    margin-bottom: 20px;
+}
+
+.teamPhoto {
+    width: 350px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.memberInfo {
+    text-align: left;
+}
+
+.memberInfo p {
+    margin: 0;
+}
+
+.adventure-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.adventure-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: #fff; /* White background */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.adventure-form fieldset {
+    border: none;
+    margin-bottom: 15px;
+    background-color: transparent; /* Override background color */
+}
+
+.adventure-form legend {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+    background-color: #fff; /* White background */
+    padding: 5px 10px; /* Add padding for better spacing */
+}
+
+.adventure-form input[type="text"],
+.adventure-form input[type="email"],
+.adventure-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #fff; /* Override background color */
+}
+
+.adventure-form .radio-group {
+    margin-top: 5px;
+    background-color: transparent; /* Override background color */
+}
+
+.adventure-form label {
+    margin-left: 5px;
+    color: #555;
+    background-color: #fff; /* White background */
+    padding: 5px 10px; /* Add padding for better spacing */
+    display: inline-block; /* Ensure labels don't break to new lines */
+    border-radius: 5px;
+}
+
+.adventure-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adventure-form button:hover {
+    background-color: #45a049;
+}
