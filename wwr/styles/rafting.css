@@ -23,6 +23,10 @@
 label {
     background-color: white;
 }
+img[alt="logo"]{
+    background-color: transparent;
+    width: 15%;
+}
 
 * {
     background-color: var(--accent2-color);
@@ -51,10 +55,11 @@ h3 {
 }
 
 header {
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--accent1-color);
-    display: grid;
-    grid-template-columns: auto 1fr; /* Logo takes auto width, nav takes the remaining space */
+    padding: 20px;
 }
 
 p {
@@ -90,28 +95,14 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-article {
-    position: absolute;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
-
-article :not(img, p) {
-    opacity: 50%;
-}
-
-img {
-    float: right;
-}
-
-main img {
+main img :not(.background-image){
     float: right;
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    /*border: 1px solid steelblue;*/
     padding: 2px;
-    box-shadow: 0 0 30px gray;
-    margin: 0 1rem 1rem 1rem; /* Adjusted margin */
+    /*box-shadow: 0 0 30px gray;*/
+    margin: 0 1rem 1rem 1rem;
 }
 
 form {
@@ -119,9 +110,18 @@ form {
 }
 
 /* Classes */
+
+.hero {
+    position: relative; /* Ensure the hero section has a higher z-index */
+    z-index: 1;
+    background-color: var(--accent1-color);
+    padding: 20px;
+    text-align: center;
+}
+
 .hero img {
     display: block;
-    width: 100%;
+    /*width: 100%;*/
     height: auto;
 }
 
@@ -143,11 +143,36 @@ form {
     row-gap: 50px;
 }
 
-.teamMember {
-    padding: 25px;
+.footer {
+    display: flex;
+    justify-content: space-between; /* Align items on each end of the flex container */
+    align-items: center; /* Center items vertically */
+    background-color: #706c61;
+    color: white;
+    padding: 20px;
 }
 
-.social {}
+.footer ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.footer ul li {
+    padding: 0 10px;
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text */
+}
+
+.history {
+    background-color: var(--accent1-color);
+    padding: 20px;
+}
 
 .contactItem {
     display: inline-block;
@@ -155,117 +180,64 @@ form {
     padding-right: 25px;
     font-size: 35px;
 }
-
-.main-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.Main_title {
-    justify-content: flex-start;   
-    order: 1;
-}
-
-p {
-    order: 2;
-}
-
-.contactInfo {
-    order: 3;
-}
-
-.flex {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.teamMember {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.teamPhoto {
-    width: 350px;
-    height: auto;
-    margin-right: 20px;
-}
-
-.memberInfo {
-    text-align: left;
-}
-
-.memberInfo p {
-    margin: 0;
-}
-
-.adventure-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.adventure-form h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #333;
-    background-color: #fff; /* White background */
-    padding: 10px; /* Add padding for better spacing */
-}
-
-.adventure-form fieldset {
-    border: none;
-    margin-bottom: 15px;
-    background-color: transparent; /* Override background color */
-}
-
-.adventure-form legend {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 5px;
-    background-color: #fff; /* White background */
-    padding: 5px 10px; /* Add padding for better spacing */
-}
-
-.adventure-form input[type="text"],
-.adventure-form input[type="email"],
-.adventure-form textarea {
+.background-image {
+    position: relative; /* Change position to relative */
+    background-color: transparent;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-    background-color: #fff; /* Override background color */
+    max-width: 960px;
+    margin: 0 auto;
+    /*z-index: -1;*/
+}
+.background-image img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+}
+.hero article {
+    position: relative; /* Set position relative to allow z-index */
+    z-index: 1; /* Ensure article is on top of the background image */
+}
+.mainInfo-about{
+    position: absolute;
+}
+.subhero{
+    float: right;
+}
+.mainInfo-about {
+    display: flex;
+    align-items: center; /* Align items vertically */
 }
 
-.adventure-form .radio-group {
-    margin-top: 5px;
-    background-color: transparent; /* Override background color */
+.mainInfo-about .content {
+    flex: 1; /* Take up remaining space */
 }
 
-.adventure-form label {
-    margin-left: 5px;
-    color: #555;
-    background-color: #fff; /* White background */
-    padding: 5px 10px; /* Add padding for better spacing */
-    display: inline-block; /* Ensure labels don't break to new lines */
-    border-radius: 5px;
+.mainInfo-about p {
+    margin-right: 20px; /* Adjust margin for spacing */
+}
+.history {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text horizontally */
 }
 
-.adventure-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.history-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    max-width: 960px; /* Limit content width */
 }
 
-.adventure-form button:hover {
-    background-color: #45a049;
+.history-content p {
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.mainlogo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+}
+
+.mainlogo {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
 }
