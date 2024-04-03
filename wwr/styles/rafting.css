@@ -18,14 +18,24 @@
     --heading-font: 'Lato', serif;
     --paragraph-font: 'Open Sans', serif;
 }
+html {
+	margin: 0;
+	padding: 0;
+	max-width:1920px;
+	min-width: 480px;
+	width: 200%;
+	height: 100vh;
+	margin-left: -25px;
+	overflow-x: hidden;
 
+}
 /* Main Code */
 label {
     background-color: white;
 }
 img[alt="logo"]{
     background-color: transparent;
-    width: 15%;
+    width: 100%;
 }
 
 * {
@@ -60,23 +70,37 @@ header {
     justify-content: space-between;
     background-color: var(--accent1-color);
     padding: 20px;
+    padding-bottom: 50px;
+    width: 960px;
+    margin: 1rem;
 }
 
 p {
     padding: 25px;
     color: #fff;
 }
-
+p :not(.hero){
+    padding: 25px;
+    right: -50rem;
+    font-size: 20px;
+}
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
     grid-column: 2/5;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    margin-top: -20px;
+	max-width:1920px;
+	min-width: 480px;
+	width: 200%;
+	overflow-x: hidden; 
 }
 
 nav li {
-    padding-right: 50px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 1rem;
 }
 
 nav a {
@@ -84,6 +108,7 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
+    height: auto;
 }
 
 nav a:link, nav a:visited {
@@ -104,9 +129,41 @@ main img :not(.background-image){
     /*box-shadow: 0 0 30px gray;*/
     margin: 0 1rem 1rem 1rem;
 }
-
-form {
+/*Form Styles*/
+form{
+    background-color: gray;
+    color: black;
+    padding: 50px;
+	margin-left: 50px;
+}
+fieldset{
+    padding: 50px;
+    background-color: gray;
+    margin: 15px;
+}
+button{
+    background-color: navy;
     color: white;
+    padding: 25px;
+    font-size: 35px;
+    /*left: 15px;*/
+}
+button:hover {
+    background-color: green;
+    color: black;
+    padding: 25px;
+}
+legend{
+    color: white;
+    background-color: gray;
+    font-size: 35px;;
+}
+select{
+    font-size: 25px;
+}
+input{
+    height: 25px;
+    width: auto;
 }
 
 /* Classes */
@@ -241,3 +298,13 @@ form {
     max-width: 100%; /* Ensure image does not exceed container width */
     height: auto; /* Maintain aspect ratio */
 }
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*.minilogo{
+    width: 200px;
+    margin-right: 1rem;
+}*/
