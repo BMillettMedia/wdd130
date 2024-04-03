@@ -33,7 +33,7 @@ html {
 label {
     background-color: white;
 }
-img[alt="logo"]{
+img[alt="logo"] :not(.minilogo){
     background-color: transparent;
     width: 100%;
 }
