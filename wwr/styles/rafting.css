@@ -304,7 +304,7 @@ input{
     justify-content: flex-start;
     align-items: center;
 }
-/*.minilogo{
-    width: 200px;
+.minilogo{
+    width: 500px;
     margin-right: 1rem;
-}*/
+}
