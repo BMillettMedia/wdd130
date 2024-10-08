@@ -1,0 +1,51 @@
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
+
+*{
+    font-family: serif;
+}
+
+
+html{
+    background-color: #64a6f2;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+ }
+
+ h1{
+    color: white;
+    font-family: Lato;
+    text-align: center;
+    font-size: 3.5em;
+ }
+ h1:hover{
+    color: black;
+ }
+ img{
+    width: 30em;
+ }
+
+ /*classes*/
+ .quote{
+    color: white;
+    font-size: 2em;
+    width: 15em;
+    text-align: center;
+
+ }
+ .quote-small{
+    color: white;
+    font-size: 1.5em;
+    width: 20em;
+    text-align: center;
+
+ }
+ #ol{
+    font-size: 2em;
+ }
+ .quote-bottom{
+  text-align: center;  
+ }
