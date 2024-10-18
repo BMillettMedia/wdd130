@@ -4,6 +4,20 @@
 /* Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
 
+/*REST CODE*/
+body {
+    background-color: #fcfbfb;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+/*REST CODE*/
+
+
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #ffd166;
@@ -42,6 +56,11 @@ html {
 main section {
     text-align: center;
 }
+
+main section img{
+    border: 10px solid #d9c2a3;
+}
+
 label {
     background-color: white;
 }
@@ -218,6 +237,7 @@ nav a{
     padding: 1rem;
     height: auto;
     text-align: center;
+    padding: 35px;
 }
 nav a:link, nav a:visited{
     color: var(--nav-link-color);
@@ -254,7 +274,30 @@ li :not(.contactInfo) :not(.nav_link){
 #background {
     height: 725px;
 }
+
+#logo_link{
+    padding-top: 5px;
+}
 /* Classes */
+.home-title {
+    font-size: 2em;
+    font-family: 'lato';
+    margin-top: 10px;
+}
+
+.book, .join{
+    font-size: 18em;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.msg{
+    line-height: 1.5em;
+    background-color: #6f7364;
+    padding: 35px;
+}
+
 .book{
     text-decoration: none;
 }
@@ -262,13 +305,27 @@ li :not(.contactInfo) :not(.nav_link){
     text-decoration: none;
 }
 
+.msg p {
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
 
 .buton-box{
     text-align: center;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}   
+
+.card-img{
+    border: 10px;
+}
+
 .hero {
     position: relative; /* Ensure the hero section has a higher z-index */
     z-index: 1;
@@ -308,6 +365,8 @@ li :not(.contactInfo) :not(.nav_link){
     background-color: #706c61;
     color: white;
     padding: 20px;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 .footer ul {
@@ -316,6 +375,10 @@ li :not(.contactInfo) :not(.nav_link){
     list-style-type: none;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+}
+
+.footer .social img{
+    padding-top: 15px;
 }
 
 .footer ul li {
