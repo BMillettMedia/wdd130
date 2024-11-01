@@ -47,7 +47,7 @@ html {
 	min-width: 480px;
 	width: 200%;
 	height: 100vh;
-	/*margin-left: -25px;*/
+	margin: -25px;
 	overflow-x: hidden;
     background-color: var(--accent2-color);
 
@@ -94,7 +94,7 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
     align-items: center;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     background-color: var(--accent1-color);
     padding: 20px;
     padding-bottom: 50px;
@@ -106,11 +106,11 @@ p {
     padding: 25px;
     color: #fff;
 }
-p :not(.hero){
+/*p :not(.hero){
     padding: 25px;
     right: -50rem;
     font-size: 20px;
-}
+}*/
 
 main img :not(.background-image){
     float: right;
@@ -200,23 +200,15 @@ nav a:hover{
     background-color: var(--nav-hover-background-color);
 }
 li :not(.contactInfo) :not(.nav_link){
-    align-items: center;
+    /*align-items: center;
     display: inline-block;
     padding-left: 20px;
-    padding-right: 20px;
-    width:75px; /*Issue with V_alignment & nav list links if turned on*/
-    font-size: 35px;
-	list-style-type: none;
+    padding-right: 20px;*/
+    width: 50px;
+    /*font-size: 35px;*/
+	/*list-style-type: none;*/
 }
-.nav_link :not(.contactInfo){
-    align-items: center;
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    /*width:50px;*/ /*Issue with V_alignment & nav list links if turned on*/
-    font-size: 35px;
-	list-style-type: none;
-}
+
 
 /*IDs*/
 
@@ -266,7 +258,7 @@ li :not(.contactInfo) :not(.nav_link){
 }
 
 .mountains {
-    grid-column: 2 / 7; 
+    grid-column: 1 / 7; 
     grid-row: 5 / 8;    
     width: 100%;
     height: 100%;
@@ -311,6 +303,7 @@ li :not(.contactInfo) :not(.nav_link){
 
 .buton-box{
     text-align: center;
+    width: 500px;
 }
 .icon {
     width: 80px;
@@ -416,15 +409,6 @@ footer p a:hover {
 
 footer a {
     text-decoration: none;
-}
-
-.background-image {
-    position: relative; /* Change position to relative */
-    background-color: transparent;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    /*z-index: -1;*/
 }
 
 /*media responsive*/
