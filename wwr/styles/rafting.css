@@ -364,6 +364,9 @@ li :not(.contactInfo) :not(.nav_link){
 .adventure {
     width: 190px;
 }
+.icon{
+    width: 80px;
+}
 
 .grid {
     display: inline-grid;
