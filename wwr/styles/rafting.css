@@ -98,7 +98,7 @@ header {
     background-color: var(--accent1-color);
     padding: 20px;
     padding-bottom: 50px;
-    width: 960px;
+    width: 100%;
     margin: 1rem;
 }
 
@@ -362,7 +362,8 @@ li :not(.contactInfo) :not(.nav_link){
 
 
 .adventure {
-    width: 190px;
+    width: 100%;
+    grid-template-columns: 1/5;
 }
 .icon{
     width: 80px;
@@ -384,8 +385,9 @@ footer {
     align-items: center; /* Center items vertically */
     background-color: #706c61;
     color: white;
-    padding: 20px;
+    
     padding: 25px 50px;
+    width: 100%;
 }
 
 footer ul {
