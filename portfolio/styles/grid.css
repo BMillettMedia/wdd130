@@ -1,0 +1,25 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: auto; /* Automatically adjust the height of rows */
+    grid-template-columns: 1fr 2fr; /* 1 part for the image and 2 parts for the text */
+    gap: 1rem; /* Space between grid items */
+    align-items: center; /* Align items vertically */
+    max-width: 800px;
+    margin: 0 auto; /* Center the grid horizontally on the page */
+}
+
+.grid-container h1 {
+    grid-column: span 2; /* Make the h1 span across both columns */
+    text-align: center;
+}
+
+.grid-container img {
+    grid-row: 2; /* Place the image in the second row */
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-container p {
+    grid-row: 2; /* Place the paragraph in the second row */
+    grid-column: 2; /* Place the paragraph in the second column */
+}
