@@ -23,3 +23,38 @@
     grid-row: 2; /* Place the paragraph in the second row */
     grid-column: 2; /* Place the paragraph in the second column */
 }
+
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Left column (skills) and right column (everything else) */
+    gap: 2rem; /* Space between columns */
+    max-width: 1200px; /* Adjust as needed for your layout */
+    margin: 0 auto; /* Center the grid on the page */
+}
+
+.skills {
+    grid-column: 1; /* Place the skills in the left column */
+}
+
+.other-sections {
+    grid-column: 2; /* Place all other sections in the right column */
+}
+
+h3 {
+    margin-top: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    display: block;
+    margin-bottom: 0.3rem;
+}

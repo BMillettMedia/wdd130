@@ -26,9 +26,14 @@ body {
 a {
     text-decoration: none;
 }
-a:link,
+nav a:link,
 a:visited {
   color: var(--text-light); /* Match font color with --text-light variable */
+}
+
+a:link,
+a:visited :not(nav){
+  color: var(--text-dark); /* Match font color with --text-light variable */
 }
 
 header {
