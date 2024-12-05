@@ -12,7 +12,7 @@
 	<!--<link rel="stylesheet" href="styles/mw-styles.css">-->
 
 	<!-- You can link your JavaScript files here -->
-    <script src="slide.js"></script>
+    <!--<script src="slide.js"></script>-->
 </head>
 <body>
 	<header>
@@ -187,5 +187,42 @@
 			</ul>
 		</nav>
 	</footer>
+	<!-- Slideshow JavaScript -->
+    <script>
+        document.querySelectorAll(".slideshow-container").forEach(container => {
+            const slides = container.querySelectorAll(".mySlides");
+            const dots = container.querySelectorAll(".dot");
+            let slideIndex = 1;
+
+            function showSlides(n) {
+                if (n > slides.length) slideIndex = 1;
+                if (n < 1) slideIndex = slides.length;
+
+                slides.forEach(slide => (slide.style.display = "none"));
+                dots.forEach(dot => dot.classList.remove("active"));
+
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].classList.add("active");
+            }
+
+            container.querySelector(".prev").addEventListener("click", () => {
+                showSlides(--slideIndex);
+            });
+
+            container.querySelector(".next").addEventListener("click", () => {
+                showSlides(++slideIndex);
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+                    slideIndex = index + 1;
+                    showSlides(slideIndex);
+                });
+            });
+
+            showSlides(slideIndex);
+        });
+    </script>
+
 </body>
 </html>
