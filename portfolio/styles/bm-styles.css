@@ -1,13 +1,56 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+/* IM Fell French Canon SC */
+@font-face {
+  font-family: 'IM Fell French Canon SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/imfellfrenchcanon/v11/FBVmdCru5-ifcor2bgq0TBJMLtLWNrL2D-o.ttf') format('truetype');
+}
 
-/*Roboto*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Lato */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wXiWtFCc.ttf') format('truetype');
+}
 
-/*Frank Ruhl Libre*/
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Josefin Sans */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/josefinsans/v17/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQXxR5Vn0.ttf') format('truetype');
+}
+
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxP.ttf') format('truetype');
+}
+
+/* Frank Ruhl Libre */
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/frankruhllibre/v8/j8_q6-HK1L3ifWhcWNo-rdztjw49tQ.otf') format('truetype');
+}
+
+
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: "IM Fell French Canon SC", serif;
+  --secondary-font: "Lato", sans-serif;
+  --heading-font: "Frank Ruhl Libre", serif;
+  --paragraph-font: "Roboto", sans-serif;
+}
+
 /*Applied Fonts*/
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -24,18 +67,6 @@ p {
   font-style: normal;
 }
 
-:root {
-  --primary-color: #52489c;
-  --secondary-color: #59c3c3;
-  --accent-color: #f45b69;
-  --text-dark: #333;
-  --text-light: #ebebeb;
-  --primary-font: 'permanent-marker-regular';
-  --secondary-font: 'Mooli', sans-serif;
-
-  --heading-font: "Frank Ruhl Libre";
-  --paragraph-font: "Roboto";
-}
 
 /**Code taken from previous assignments. Adjust as needed**/
 body {
