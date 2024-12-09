@@ -1,3 +1,23 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Frank Ruhl Libre*/
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Applied Fonts*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+p {
+  font-family: var(--paragraph-font);
+}
+
+
+
 /* CSS Document */
 html {
   background-color: #333;

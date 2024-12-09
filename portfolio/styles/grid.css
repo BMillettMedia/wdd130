@@ -7,7 +7,15 @@
     max-width: 800px;
     margin: 0 auto; /* Center the grid horizontally on the page */
 }
-
+.grid-container_about {
+    display: grid;
+    grid-template-rows: auto; /* Automatically adjust the height of rows */
+    grid-template-columns: 1fr 2fr; /* 1 part for the image and 2 parts for the text */
+    gap: 1rem; /* Space between grid items */
+    align-items: center; /* Align items vertically */
+    /*max-width: 800px;*/
+    margin: 0 auto; /* Center the grid horizontally on the page */
+}
 .grid-container h1 {
     grid-column: span 2; /* Make the h1 span across both columns */
     text-align: center;
@@ -41,6 +49,11 @@
     grid-column: 2; /* Place all other sections in the right column */
 }
 
+.AboutCopy{
+    grid-column: 2;
+    width: 100%;
+}
+
 h3 {
     margin-top: 1rem;
 }
@@ -57,4 +70,11 @@ li {
 strong {
     display: block;
     margin-bottom: 0.3rem;
+}
+
+#heroImage{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: 100%;
+    width: auto;
 }
