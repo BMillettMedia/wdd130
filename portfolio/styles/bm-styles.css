@@ -109,6 +109,7 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 1em;
+  font-size: 30px;
 }
 
 nav ul li:last-child {
